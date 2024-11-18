@@ -9,14 +9,10 @@ public class main {
         Scanner sc = new Scanner(System.in);
 
         //get input from user.
-        for (int i = 0; i < 10; i++) {
-            names[i] = sc.nextLine();
-        }
-        for (int i = 0; i < 10; i++) {
-            numbers[i] = sc.nextInt();
-        }
+        for (int i = 0; i < 10; i++)names[i] = sc.nextLine();
+        for (int i = 0; i < 10; i++)numbers[i] = sc.nextInt();
         sc.close(); // Close Scanner
-
+        
         // Output information
         for (int i = 0; i < 10; i++) {
             System.out.print((i + 1) + "- " + names[i] + " Length : " + names[i].length() + " ");
